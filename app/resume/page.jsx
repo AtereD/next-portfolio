@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { Github, Linkedin, Mail } from "lucide-react";
+import Header from "@/components/Header";
 
 const resume = () => {
   return (
@@ -13,6 +14,7 @@ const resume = () => {
         />
         <link rel="icon" href="/logo.png" />
       </Head>
+      <Header/>
 
       <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
         {/* <h2 className='text-center'>Resume</h2> */}

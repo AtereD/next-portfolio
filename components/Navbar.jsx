@@ -22,6 +22,7 @@ const Navbar = () => {
 
   return (
     <nav
+    style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full shadow-xl h-20 z-[100]"
@@ -58,8 +59,8 @@ const Navbar = () => {
         </div>
 
         {/* Mobile View */}
-        <div className="lg:hidden">
-          <MobileNav />
+        <div className="lg:hidden" >
+          <MobileNav/>
         </div>
       </div>
     </nav>

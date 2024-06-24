@@ -17,26 +17,26 @@ const Projects = () => {
                 <ProjectItem
                     title="Firebase Auth Login"
                     backgroundImg={Img1}
-                    projectURL="/firebase"
+                    projectURL="/project/project1"
                     skillUsed="ReactJS"
                 />
                  <ProjectItem
                     title="Landing Page"
                     backgroundImg={Img2}
-                    projectURL="/landing-page"
+                    projectURL="/project/project2"
                     skillUsed="ReactJS"
                 />
                  <ProjectItem
                     title="Portfolio"
                     backgroundImg={Img3}
-                    projectURL="/portflio"
+                    projectURL="/project/project3"
                     skillUsed="ReactJS"
                 />
-                 <ProjectItem
+                 {/* <ProjectItem
                     title="Firebase Auth Login"
                     backgroundImg={Img1}
-                    projectURL="/firebase"
-                />
+                    projectURL="/project1"
+                /> */}
             </div>
         </div>
     </div>
