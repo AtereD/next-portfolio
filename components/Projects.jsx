@@ -13,7 +13,7 @@ const Projects = () => {
         <div className='container py-16 mx-auto'>
             <p className='text-xl text-[#5651e5] uppercase tracking-widest'>Projects</p>
             <h2 className='py-4'>What I've Built</h2>
-            <div className='grid gap-8 md:grid-cols-2'>
+            <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
                 <ProjectItem
                     title="Firebase Auth Login"
                     backgroundImg={Img1}

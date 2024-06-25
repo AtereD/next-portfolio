@@ -11,6 +11,7 @@
   html {
     scroll-behavior: smooth;
   }
+
   
   @layer base {
     :root {
@@ -81,7 +82,7 @@
       @apply box-border;
     }
     body {
-      @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+      @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide dark:bg-gray-900 dark:text-white;
     }
     
     h1, h2, h3, h4, h5, h6 {
@@ -101,6 +102,6 @@
     }
 
     button {
-      @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
+      @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white dark:shadow-none dark:text-slate-900 dark:from-slate-100 dark:to-slate-100 dark:h-[55px] dark:transform dark:ease-in dark:duration-300;
     }
   }

@@ -1,0 +1,19 @@
+.logo {
+    position: relative; /* Ensure the logo is positioned relative to its container */
+    overflow: hidden; /* Hide overflow to clip the transformed text */
+  }
+  
+  .logo-text {
+    display: inline-block; /* Ensure the text can be transformed */
+    animation: switchText 5s infinite alternate; /* Animation settings */
+  }
+  
+  @keyframes switchText {
+    0%, 100% {
+      transform: translateX(0); /* Start and end position */
+    }
+    50% {
+      transform: translateX(-100%); /* Midpoint of the animation */
+    }
+  }
+  

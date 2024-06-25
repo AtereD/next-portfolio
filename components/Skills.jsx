@@ -8,7 +8,7 @@ const Skills = () => {
             <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Skills</p>
             <h2 className='py-4'>What I Can Do</h2>
             <div className='grid md:grid-cols-2 lg:grid-cols-4'>
-                <div className='p-6 duration-300 ease-in rounded shadow-xl hover:scale-105'>
+                <div className='p-6 duration-300 ease-in rounded shadow-lg hover:scale-105 dark:shadow-[#5651e5]'>
                     <div className='grid items-center justify-center grid-cols-2 gap-4'>
                         <div className='m-auto'>
                             <Image src={"/assets/html.svg"} alt="skill-image" width={64} height={64}/>
@@ -18,7 +18,7 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-                <div className='p-6 duration-300 ease-in rounded shadow-xl hover:scale-105'>
+                <div className='p-6 duration-300 ease-in rounded shadow-lg hover:scale-105 dark:shadow-[#5651e5]'>
                     <div className='grid items-center justify-center grid-cols-2 gap-4'>
                         <div className='m-auto'>
                             <Image src={"/assets/css.svg"} alt="skill-image" width={64} height={64}/>
@@ -28,7 +28,7 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-                <div className='p-6 duration-300 ease-in rounded shadow-xl hover:scale-105'>
+                <div className='p-6 duration-300 ease-in rounded shadow-lg hover:scale-105 dark:shadow-[#5651e5]'>
                     <div className='grid items-center justify-center grid-cols-2 gap-4'>
                         <div className='m-auto'>
                             <Image src={"/assets/javascript.svg"} alt="skill-image" width={64} height={64}/>
@@ -38,7 +38,7 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-                <div className='p-6 duration-300 ease-in rounded shadow-xl hover:scale-105'>
+                <div className='p-6 duration-300 ease-in rounded shadow-lg hover:scale-105 dark:shadow-[#5651e5]'>
                     <div className='grid items-center justify-center grid-cols-2 gap-4'>
                         <div className='m-auto'>
                             <Image src={"/assets/reactjs.svg"} alt="skill-image" width={64} height={64}/>
@@ -48,7 +48,7 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-                <div className='p-6 duration-300 ease-in rounded shadow-xl hover:scale-105'>
+                <div className='p-6 duration-300 ease-in rounded shadow-lg hover:scale-105 dark:shadow-[#5651e5]'>
                     <div className='grid items-center justify-center grid-cols-2 gap-4'>
                         <div className='m-auto'>
                             <Image src={"/assets/nextjs.svg"} alt="skill-image" width={64} height={64}/>
@@ -58,7 +58,7 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-                <div className='p-6 duration-300 ease-in rounded shadow-xl hover:scale-105'>
+                <div className='p-6 duration-300 ease-in rounded shadow-lg hover:scale-105 dark:shadow-[#5651e5]'>
                     <div className='grid items-center justify-center grid-cols-2 gap-4'>
                         <div className='m-auto'>
                             <Image src={"/assets/tailwind.svg"} alt="skill-image" width={64} height={64}/>
@@ -68,7 +68,7 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-                <div className='p-6 duration-300 ease-in rounded shadow-xl hover:scale-105'>
+                <div className='p-6 duration-300 ease-in rounded shadow-lg hover:scale-105 dark:shadow-[#5651e5]'>
                     <div className='grid items-center justify-center grid-cols-2 gap-4'>
                         <div className='m-auto'>
                             <Image src={"/assets/git.svg"} alt="skill-image" width={64} height={64}/>
@@ -78,7 +78,7 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-                <div className='p-6 duration-300 ease-in rounded shadow-xl hover:scale-105'>
+                <div className='p-6 duration-300 ease-in rounded shadow-lg hover:scale-105 dark:shadow-[#5651e5]'>
                     <div className='grid items-center justify-center grid-cols-2 gap-4'>
                         <div className='m-auto'>
                             <Image src={"/assets/firebase.svg"} alt="skill-image" width={64} height={64}/>

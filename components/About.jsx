@@ -11,7 +11,7 @@ const About = () => {
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-gray-600">
+          <p className="py-2 text-gray-600 dark:text-slate-200">
             I specialize in developing mobile-responsive front-end user
             interface (UI) applications that seamlessly integrate with APIs and
             various backend technologies. My passion for technology fuels my
@@ -19,13 +19,13 @@ const About = () => {
             completion. While my expertise lies in crafting front-end
             applications using HTML, CSS, JavaScript, and React, I strongly
             believe that true mastery in development comes from the ability to
-            select the best tool for each unique task at hand. I have one year
-            of experience in building web applications and I'm seeking a role
-            where I can utilize my skills to design and develop practical
-            applications and software.
+            select the best tool for each unique task at hand. I have a year
+            experience in building web applications and I'm seeking a role where
+            I can utilize my skills to design and develop practical applications
+            and software.
           </p>
           <Link href="/#projects">
-            <p className="py-2 text-gray-600 underline cursor-pointer">
+            <p className="py-2 text-gray-600 underline cursor-pointer dark:text-slate-200">
               Check out some of my latest projects.
             </p>
           </Link>

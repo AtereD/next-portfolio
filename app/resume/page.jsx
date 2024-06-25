@@ -85,6 +85,7 @@ const resume = () => {
           </p>
         </div>
 
+        {/* Education */}
         <h5 className="text-[18px] py-2 text-[#5651e5]">Education</h5>
         <div className="py-4">
           <h3 className="">
