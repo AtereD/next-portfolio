@@ -16,13 +16,13 @@ const Hero = () => {
             initial="hidden" 
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} className="tracking-widest text-gray-600 uppercase dark:text-slate-200">
-            &lt;&gt;LET'S BUILD SOMETHING TOGETHER&lt;/&gt;
+            &lt;&gt;LET&apos;S BUILD SOMETHING TOGETHER&lt;/&gt;
           </motion.p>
           <motion.h1  variants={fadeIn('up', 0.4)} 
             initial="hidden" 
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} className="py-4 text-gray-700 dark:text-slate-100">
-            Hi, I'm <span className="text-[#5651ef]">Dami</span>
+            Hi, I&apos;m <span className="text-[#5651ef]">Dami</span>
           </motion.h1>
           <motion.h1  variants={fadeIn('up', 0.4)} 
             initial="hidden" 
@@ -35,7 +35,7 @@ const Hero = () => {
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} className="py-4 text-gray-600 max-w-[70%] m-auto dark:text-slate-100">
             I excel in developing digital experiences as a front-end web
-            developer. Currently, I'm fully committed to constructing responsive
+            developer. Currently, I&apos;m fully committed to constructing responsive
             web applications.
           </motion.p>
           <motion.div  variants={fadeIn('up', 0.6)} 

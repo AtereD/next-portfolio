@@ -26,7 +26,7 @@ const Contact = () => {
                 <p className="pt-8 text-xl uppercase text-[#5651e5]">
                   Get In Touch!
                 </p>
-                <p className="pb-2">Let's Work Together</p>
+                <p className="pb-2">Let&apos;s Work Together</p>
                 <div className="flex items-center justify-around py-4 lg:justify-between">
                   <a
                     href="https://www.linkedin.com/in/atere-damilola-337546213"

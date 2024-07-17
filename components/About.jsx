@@ -20,7 +20,7 @@ const About = () => {
             applications using HTML, CSS, JavaScript, and React, I strongly
             believe that true mastery in development comes from the ability to
             select the best tool for each unique task at hand. I have a year
-            experience in building web applications and I'm seeking a role where
+            experience in building web applications and I&apos;m seeking a role where
             I can utilize my skills to design and develop practical applications
             and software.
           </p>

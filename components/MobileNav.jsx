@@ -44,7 +44,7 @@ const MobileNav = () => {
             </div>
             <div className="my-4 border-b border-gray-300 dark:border-[#5651e5]">
               <p className="w-[85%] md:[90%] py-4">
-                Let's build something legendary together
+                Let&apos;s build something legendary together
               </p>
             </div>
           </div>
@@ -68,7 +68,7 @@ const MobileNav = () => {
             </ul>
             <div className="pt-36">
               <p className="tracking-widest uppercase text-[#5651e5]">
-                Let's connect
+                Let&apos;s connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <a
