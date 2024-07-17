@@ -24,13 +24,13 @@ const Contact = () => {
               </div>
               <div>
                 <p className="py-2">Let&apos;s Work Together!</p>
-                <div className="flex gap-4 py-4 ">
+                <div className="flex gap-1 px-2 py-4 md:gap-4">
                   <a
                     href="https://www.linkedin.com/in/atere-damilola-337546213"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95]">
+                    <div className="p-3 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95]">
                       <Linkedin className="text-[#5651e5] dark:text-[#ddd]" />
                     </div>
                   </a>
@@ -39,7 +39,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95]">
+                    <div className="p-3 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95]">
                       <Github className="text-[#5651e5] dark:text-[#ddd]" />
                     </div>
                   </a>
@@ -48,12 +48,12 @@ const Contact = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95]">
+                    <div className="p-3 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95]">
                       <Mail className="text-[#5651e5] dark:text-[#ddd]" />
                     </div>
                   </a>
                   <Link href="/resume">
-                    <div className="p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95]">
+                    <div className="p-3 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95]">
                       <UserRound className="text-[#5651e5] dark:text-[#ddd]" />
                     </div>
                   </Link>

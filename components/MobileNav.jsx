@@ -56,7 +56,7 @@ const MobileNav = () => {
                 />
               </div>
             </div>
-            <div className="my-4 border-b border-gray-300 dark:border-[#5651e5]">
+            <div className="my-4 border-b border-gray-300 dark:border-[#eece1a]">
               <p className="py-4">
                 Let&apos;s build something legendary together
               </p>
@@ -84,13 +84,13 @@ const MobileNav = () => {
               <p className="tracking-widest uppercase text-[#eece1a]">
                 Let&apos;s connect
               </p>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
+              <div className="flex items-center w-full gap-2 my-4">
                 <a
                   href="https://www.linkedin.com/in/atere-damilola-3375"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#eade95]">
+                  <div className="p-2 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#eade95]">
                     <Linkedin color="#ddd" />
                   </div>
                 </a>
@@ -99,15 +99,15 @@ const MobileNav = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#eade95]">
+                  <div className="p-2 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#eade95]">
                     <Github color="#ddd" />
                   </div>
                 </a>
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#eade95]">
+                <div className="p-2 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#eade95]">
                   <Mail color="#ddd" />
                 </div>
                 <Link href="/resume">
-                  <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#eade95]">
+                  <div className="p-2 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#eade95]">
                     <UserRound color="#ddd" />
                   </div>
                 </Link>

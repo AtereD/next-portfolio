@@ -67,14 +67,14 @@ const Hero = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="flex items-center justify-between py-4 max-w-[330px] m-auto"
+            className="flex justify-center items-center py-4 max-w-[330px] m-auto gap-2"
           >
             <a
               href="https://www.linkedin.com/in/atere-damilola-3375"
               target="_blank"
               rel="noreferrer"
             >
-              <div className="p-5 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95] ">
+              <div className="p-3 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95] ">
                 <Linkedin className="text-[#5651e5] dark:text-[#ddd]" />
               </div>
             </a>
@@ -83,7 +83,7 @@ const Hero = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="p-5 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95]">
+              <div className="p-3 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95]">
                 <Github className="text-[#5651e5] dark:text-[#ddd]" />
               </div>
             </a>
@@ -92,12 +92,12 @@ const Hero = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="p-5 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95]">
+              <div className="p-3 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95]">
                 <Mail className="text-[#5651e5] dark:text-[#ddd]" />
               </div>
             </a>
             <Link href="/resume">
-              <div className="p-5 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95]">
+              <div className="p-3 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 dark:shadow-[#eade95]">
                 <UserRound className="text-[#5651e5] dark:text-[#ddd]" />
               </div>
             </Link>
