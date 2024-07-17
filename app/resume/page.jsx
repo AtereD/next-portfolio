@@ -10,16 +10,18 @@ const resume = () => {
         <title>Atere Damilola | Resume</title>
         <meta
           name="description"
-          content="I&apos; m a front-end web developer specializing in building  exceptional digital interfaces."
+          content="I' m a front-end web developer specializing in building  exceptional digital interfaces."
         />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <Header/>
+      <Header />
 
-      <div className="max-w-[940px] mx-auto p-2 pt-[120px] bg-[#ecf0f3] dark:bg-[#111827]">
+      <div className="max-w-[940px] mx-auto p-2 pt-[120px] bg-[#ecf0f3] dark:bg-[#1f1f1f]">
         {/* <h2 className='text-center'>Resume</h2> */}
-        <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
-          <h2 className="text-center text-[#5651e5]">Atere Damilola</h2>
+        <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center dark:bg-[#101010]">
+          <h2 className="text-center text-[#5651e5] dark:text-[#f7df5a]">
+            Atere Damilola
+          </h2>
           <div className="flex">
             <a
               href="https://www.linkedin.com/in/atere-damilola-3375"
@@ -29,7 +31,7 @@ const resume = () => {
               <Linkedin
                 size={20}
                 style={{ marginRight: "1rem" }}
-                color="#5651e5"
+                className="text-[#5651e5] dark:text-[#eece1a]"
               />
             </a>
             <a
@@ -40,7 +42,7 @@ const resume = () => {
               <Github
                 size={20}
                 style={{ marginRight: "1rem" }}
-                color="#5651e5"
+                className="text-[#5651e5] dark:text-[#eece1a]"
               />
             </a>
             <a
@@ -48,7 +50,11 @@ const resume = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Mail size={20} style={{ marginRight: "1rem" }} color="#5651e5" />
+              <Mail
+                size={20}
+                style={{ marginRight: "1rem" }}
+                className="text-[#5651e5] dark:text-[#eece1a]"
+              />
             </a>
           </div>
         </div>
@@ -71,7 +77,9 @@ const resume = () => {
 
         {/* Skills */}
         <div className="py-4 ">
-          <h5 className=" text-[18px] py-2 text-[#5651e5]">Skills</h5>
+          <h5 className=" text-[18px] py-2 text-[#5651e5] dark:text-[#f7df5a]">
+            Skills
+          </h5>
           <p className="py-2">
             <span className="font-bold">Technical Skills</span>
             <span className="px-2">|</span>Front-End Web Development
@@ -86,7 +94,9 @@ const resume = () => {
         </div>
 
         {/* Education */}
-        <h5 className="text-[18px] py-2 text-[#5651e5]">Education</h5>
+        <h5 className="text-[18px] py-2 text-[#5651e5] dark:text-[#f7df5a]">
+          Education
+        </h5>
         <div className="py-4">
           <h3 className="">
             University of Abuja, Nigeria
@@ -98,7 +108,7 @@ const resume = () => {
           </h3>
         </div>
 
-        <h5 className="text-[18px] py-4 text-[#5651e5]">
+        <h5 className="text-[18px] py-4 text-[#5651e5] dark:text-[#f7df5a]">
           Professional Experience
         </h5>
         {/* Experience */}
@@ -116,8 +126,8 @@ const resume = () => {
               understanding of HTML, CSS, and JavaScript.
             </li>
             <li>
-              I assisted in implementing the visual elements of the company&apos;s
-              application, focusing on user interface designs.
+              I assisted in implementing the visual elements of the
+              company&apos;s application, focusing on user interface designs.
             </li>
             <li>
               I collaborated with designers and backend developers to implement
@@ -143,10 +153,9 @@ const resume = () => {
               methods
             </li>
             <li>
-              I worked on a team that oversaw teachers instructional
-              strategies, conducted research, made recommendations for
-              enhancements, and evaluated current curricula with teachers and
-              administrators.
+              I worked on a team that oversaw teachers instructional strategies,
+              conducted research, made recommendations for enhancements, and
+              evaluated current curricula with teachers and administrators.
             </li>
             <li>
               I was part of an engineering team that created user interfaces to
@@ -159,7 +168,7 @@ const resume = () => {
         </div>
 
         {/*  */}
-        <h5 className="text-[18px] py-4 text-[#5651e5]">
+        <h5 className="text-[18px] py-4 text-[#5651e5] dark:text-[#f7df5a]">
           Other Professional Experience
         </h5>
 

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Moon, SunMoon } from "lucide-react";
 
-const ThemeToggle = () => {
+const MobileThemeToggle = () => {
   const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
@@ -22,10 +22,10 @@ const ThemeToggle = () => {
 
   return (
     <div
-      className="relative items-center hidden w-16 h-8 p-1 rounded-full cursor-pointer lg:flex dark:bg-[1f1f1f]"
+      className="relative flex items-center w-16 h-8 p-1 rounded-full cursor-pointer lg:hidden dark:bg-[#1f1f1f]"
       onClick={() => setDarkMode(!darkMode)}
     >
-      <Moon color="#5651ef" className="text-white" size={18} />
+      <Moon  className="text-slate-600" size={18}  />
       <div
         className="absolute w-6 h-6 transition-transform duration-300 transform bg-slate-100 rounded-full shadow-md dark:bg-[#ddd]"
         style={darkMode ? { left: "2px" } : { right: "2px" }}
@@ -35,4 +35,4 @@ const ThemeToggle = () => {
   );
 };
 
-export default ThemeToggle;
+export default MobileThemeToggle;

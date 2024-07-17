@@ -28,17 +28,20 @@ const Navbar = () => {
     <nav
       className={
         shadow
-          ? "fixed w-full shadow-xl h-20 z-[100] bg-[#ecf0f3] dark:bg-[#111827] dark:shadow-[#5651e5] dark:shadow-md"
-          : "fixed w-full z-[100] h-20 pr-3 bg-[#ecf0f3] dark:bg-[#111827]"
+          ? "fixed w-full shadow-xl h-20 z-[100] bg-[#ecf0f3] dark:bg-[#1f1f1f] dark:shadow-md"
+          : "fixed w-full z-[100] h-20 bg-[#ecf0f3] dark:bg-[#1f1f1f] p-2"
       }
     >
-      <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
+      <div className="flex items-center justify-between w-full h-full 2xl:px-16">
         <Link href="/#home" className="pl-3 logo">
           {/* <Image src={"/assets/logo.png"} alt="logo" width={75} height={40} className="logo-text"/> */}
-          <div className={`logo`}>
-            <span className={`logo-text text-4xl font-bold text-[#5651e5]`}>
-              AD
-            </span>
+          <div className={`logo  dark:flex hidden`}>
+            <Image src={"/logo.png"} alt="logo" width={75} height={40} className="logo-text"/>
+          </div>
+          <div className={`logo  flex dark:hidden`}>
+          <span className={`logo-text text-4xl font-bold text-[#5651e5]`}>
+                  AD
+                </span>
           </div>
         </Link>
 
