@@ -10,7 +10,7 @@ const resume = () => {
         <title>Atere Damilola | Resume</title>
         <meta
           name="description"
-          content="I &apos; m a front-end web developer specializing in building  exceptional digital interfaces."
+          content="I&apos; m a front-end web developer specializing in building  exceptional digital interfaces."
         />
         <link rel="icon" href="/logo.png" />
       </Head>
@@ -116,7 +116,7 @@ const resume = () => {
               understanding of HTML, CSS, and JavaScript.
             </li>
             <li>
-              I assisted in implementing the visual elements of the company’s
+              I assisted in implementing the visual elements of the company&apos;s
               application, focusing on user interface designs.
             </li>
             <li>
