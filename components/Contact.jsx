@@ -27,7 +27,7 @@ const Contact = () => {
                   Get In Touch!
                 </p>
                 <p className="pb-2">Let's Work Together</p>
-                <div className="flex items-center justify-around py-4 md:justify-between">
+                <div className="flex items-center justify-around py-4 lg:justify-between">
                   <a
                     href="https://www.linkedin.com/in/atere-damilola-337546213"
                     target="_blank"

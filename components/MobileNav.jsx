@@ -29,9 +29,17 @@ const MobileNav = () => {
         >
           <div>
             <div className="flex items-center justify-between w-full">
-              <Image src={"/assets/logo.png"} alt="logo" width={60} height={35} />
+              {/* <Image src={"/assets/logo.png"} alt="logo" width={60} height={35} /> */}
+              <div className={`logo`}>
+                <span className={`logo-text text-4xl font-bold text-[#5651e5]`}>
+                  AD
+                </span>
+              </div>
               <div className="p-2 rounded-full shadow-lg cursor-pointer shadow-gray-400 dark:shadow-[#5651e5]">
-                <X onClick={handleNav} className="dark:text-slate-100 text-[#5651e5]"/>
+                <X
+                  onClick={handleNav}
+                  className="dark:text-slate-100 text-[#5651e5]"
+                />
               </div>
             </div>
             <div className="my-4 border-b border-gray-300 dark:border-[#5651e5]">
@@ -63,21 +71,32 @@ const MobileNav = () => {
                 Let's connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <a href="https://www.linkedin.com/in/atere-damilola-3375" target="_blank" rel="noreferrer">
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#5651e5]">
-                  <Linkedin color="#5651e5" />
-                </div></a>
-                <a href="https://github.com/AtereD" target="_blank" rel="noreferrer">
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#5651e5]">
-                  <Github color="#5651ef" />
-                </div></a>
+                <a
+                  href="https://www.linkedin.com/in/atere-damilola-3375"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#5651e5]">
+                    <Linkedin color="#5651e5" />
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/AtereD"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#5651e5]">
+                    <Github color="#5651ef" />
+                  </div>
+                </a>
                 <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#5651e5]">
                   <Mail color="#5651ef" />
                 </div>
                 <Link href="/resume">
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#5651e5]">
-                  <UserRound color="#5651ef" />
-                </div></Link>
+                  <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#5651e5]">
+                    <UserRound color="#5651ef" />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,27 +1,47 @@
+"use client"
+
 import React from "react";
 import { Github, Linkedin, Menu, X, Mail, UserRound } from "lucide-react";
 import Link from "next/link";
+import { fadeIn } from "./variants";
+import { motion } from "framer-motion";
+
 
 const Hero = () => {
   return (
     <div className="w-full h-screen text-center" id="home">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+      <div className="container flex items-center justify-center w-full h-full p-2 mx-auto">
         <div>
-          <p className="tracking-widest text-gray-600 uppercase dark:text-slate-200">
+          <motion.p  variants={fadeIn('up', 0.3)} 
+            initial="hidden" 
+            whileInView={'show'} 
+            viewport={{once: false, amount: 0.7}} className="tracking-widest text-gray-600 uppercase dark:text-slate-200">
             &lt;&gt;LET'S BUILD SOMETHING TOGETHER&lt;/&gt;
-          </p>
-          <h1 className="py-4 text-gray-700 dark:text-slate-100">
+          </motion.p>
+          <motion.h1  variants={fadeIn('up', 0.4)} 
+            initial="hidden" 
+            whileInView={'show'} 
+            viewport={{once: false, amount: 0.7}} className="py-4 text-gray-700 dark:text-slate-100">
             Hi, I'm <span className="text-[#5651ef]">Dami</span>
-          </h1>
-          <h1 className="py-2 text-gray-700 dark:text-slate-100">
-            A Front-End Web Developer
-          </h1>
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto dark:text-slate-100">
+          </motion.h1>
+          <motion.h1  variants={fadeIn('up', 0.4)} 
+            initial="hidden" 
+            whileInView={'show'} 
+            viewport={{once: false, amount: 0.7}} className="py-2 text-gray-700 dark:text-slate-100">
+            A Front-End Developer
+          </motion.h1>
+          <motion.p  variants={fadeIn('up', 0.5)} 
+            initial="hidden" 
+            whileInView={'show'} 
+            viewport={{once: false, amount: 0.7}} className="py-4 text-gray-600 max-w-[70%] m-auto dark:text-slate-100">
             I excel in developing digital experiences as a front-end web
             developer. Currently, I'm fully committed to constructing responsive
             web applications.
-          </p>
-          <div className="flex items-center justify-between py-4 max-w-[330px] m-auto">
+          </motion.p>
+          <motion.div  variants={fadeIn('up', 0.6)} 
+            initial="hidden" 
+            whileInView={'show'} 
+            viewport={{once: false, amount: 0.7}} className="flex items-center justify-between py-4 max-w-[330px] m-auto">
             <a
               href="https://www.linkedin.com/in/atere-damilola-3375"
               target="_blank"
@@ -54,7 +74,7 @@ const Hero = () => {
                 <UserRound color="#5651ef" />
               </div>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

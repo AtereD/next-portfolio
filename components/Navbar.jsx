@@ -11,8 +11,6 @@ const inter = Montserrat({ subsets: ["latin"] });
 
 const Navbar = () => {
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
-  const [darkMode, setDarkMode] = useState(false)
 
   useEffect(() => {
     const handleShadow = () => {
@@ -28,7 +26,6 @@ const Navbar = () => {
 
   return (
     <nav
-   
       className={
         shadow
           ? "fixed w-full shadow-xl h-20 z-[100] bg-[#ecf0f3] dark:bg-[#111827] dark:shadow-[#5651e5] dark:shadow-md"

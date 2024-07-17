@@ -16,7 +16,7 @@ const resume = () => {
       </Head>
       <Header/>
 
-      <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
+      <div className="max-w-[940px] mx-auto p-2 pt-[120px] bg-[#ecf0f3] dark:bg-[#111827]">
         {/* <h2 className='text-center'>Resume</h2> */}
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
           <h2 className="text-center text-[#5651e5]">Atere Damilola</h2>

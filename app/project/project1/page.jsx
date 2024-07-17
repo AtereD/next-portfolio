@@ -50,11 +50,11 @@ const Firebase = ({}) => {
           <div className="p-2">
             <p className="pb-2 font-bold text-center">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
-              <p className="flex items-center py-2 text-gray-600">
-                <Circle className="pr-1 text-gray-800" size={15} /> React
+              <p className="flex items-center py-2 text-gray-600 dark:text-gray-100 ">
+                <Circle className="pr-1 text-gray-800 dark:text-gray-400" size={15} /> React
               </p>
-              <p className="flex items-center py-2 text-gray-600">
-                <Circle className="pr-1 text-gray-800" size={15} /> Tailwind
+              <p className="flex items-center py-2 text-gray-600 dark:text-gray-100">
+                <Circle className="pr-1 text-gray-800 dark:text-gray-400" size={15} /> Tailwind
               </p>
               <p className="flex items-center py-2 text-gray-600">
                 <Circle className="pr-1 text-gray-800" size={15} /> Javascript
