@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className="w-full h-screen text-center" id="home">
       <div className="container flex items-center justify-center w-full h-full p-2 mx-auto">
-        <div>
+        <div className="text-center">
           <motion.p  variants={fadeIn('up', 0.3)} 
             initial="hidden" 
             whileInView={'show'} 
