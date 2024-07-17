@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Github, Linkedin, Menu, X, Mail, UserRound } from "lucide-react";
 import MobileThemeToggle from "./MobileThemeToggle";
+import { Montserrat } from "next/font/google";
+
+const inter = Montserrat({ subsets: ["latin"] });
 
 const MobileNav = () => {
   const [nav, setNav] = useState(false);
@@ -37,17 +40,19 @@ const MobileNav = () => {
         >
           <div>
             <div className="flex items-center justify-between w-full">
-              <div className={`logo `}>
-                {/* <span className={`logo-text text-4xl font-bold text-[#5651e5]`}>
-                  AD
-                </span> */}
+              <div className={`logo dark:flex hidden`}>
                 <Image
                   src={"/logo.png"}
                   alt="logo"
-                  width={75}
-                  height={40}
+                  width={50}
+                  height={50}
                   className="logo-text"
                 />
+              </div>
+              <div className={`logo  flex dark:hidden ${inter.className}`}>
+                <span className={`logo-text text-4xl font-bold text-[#5651e5]`}>
+                  AD
+                </span>
               </div>
               <div className="p-2 rounded-full shadow-lg cursor-pointer shadow-gray-400 dark:shadow-[#eade95]">
                 <X
@@ -81,7 +86,7 @@ const MobileNav = () => {
               </Link>
             </ul>
             <div className="pt-36">
-              <p className="tracking-widest uppercase text-[#eece1a]">
+              <p className="tracking-widest uppercase dark:text-[#eece1a] text-[#5651e5]">
                 Let&apos;s connect
               </p>
               <div className="flex items-center w-full gap-2 my-4">
@@ -91,7 +96,7 @@ const MobileNav = () => {
                   rel="noreferrer"
                 >
                   <div className="p-2 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#eade95]">
-                    <Linkedin color="#ddd" />
+                    <Linkedin className="text-[#5651e5] dark:text-[#ddd]" />
                   </div>
                 </a>
                 <a
@@ -100,15 +105,15 @@ const MobileNav = () => {
                   rel="noreferrer"
                 >
                   <div className="p-2 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#eade95]">
-                    <Github color="#ddd" />
+                    <Github className="text-[#5651e5] dark:text-[#ddd]" />
                   </div>
                 </a>
                 <div className="p-2 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#eade95]">
-                  <Mail color="#ddd" />
+                  <Mail className="text-[#5651e5] dark:text-[#ddd]" />
                 </div>
                 <Link href="/resume">
                   <div className="p-2 md:p-4 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 dark:shadow-[#eade95]">
-                    <UserRound color="#ddd" />
+                    <UserRound className="text-[#5651e5] dark:text-[#ddd]" />
                   </div>
                 </Link>
               </div>

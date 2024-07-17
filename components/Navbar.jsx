@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
-import  "../app/navbar.css"
+import "../app/navbar.css";
 import ThemeToggle from "./ThemeToggle";
 import { Montserrat } from "next/font/google";
 
@@ -23,7 +23,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
-
   return (
     <nav
       className={
@@ -34,14 +33,19 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between w-full h-full 2xl:px-16">
         <Link href="/#home" className="pl-3 logo">
-          {/* <Image src={"/assets/logo.png"} alt="logo" width={75} height={40} className="logo-text"/> */}
-          <div className={`logo  dark:flex hidden`}>
-            <Image src={"/logo.png"} alt="logo" width={75} height={40} className="logo-text"/>
+          <div className={`logo dark:flex hidden`}>
+            <Image
+              src={"/logo.png"}
+              alt="logo"
+              width={50}
+              height={50}
+              className="logo-text"
+            />
           </div>
-          <div className={`logo  flex dark:hidden`}>
-          <span className={`logo-text text-4xl font-bold text-[#5651e5]`}>
-                  AD
-                </span>
+          <div className={`logo  flex dark:hidden ${inter.className}`}>
+            <span className={`logo-text text-4xl font-bold text-[#5651e5]`}>
+              AD
+            </span>
           </div>
         </Link>
 
@@ -68,13 +72,13 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="ml-14">
-            <ThemeToggle/>
+            <ThemeToggle />
           </div>
         </div>
 
         {/* Mobile View */}
-        <div className="lg:hidden" >
-          <MobileNav/>
+        <div className="lg:hidden">
+          <MobileNav />
         </div>
       </div>
     </nav>
