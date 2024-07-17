@@ -143,7 +143,7 @@ const resume = () => {
               methods
             </li>
             <li>
-              I worked on a team that oversaw teachers' instructional
+              I worked on a team that oversaw teachers instructional
               strategies, conducted research, made recommendations for
               enhancements, and evaluated current curricula with teachers and
               administrators.
