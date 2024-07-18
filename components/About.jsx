@@ -28,7 +28,7 @@ const About = () => {
             </p>
           </Link>
         </div>
-        <div className="relative w-full h-auto p-4 m-auto duration-300 ease-in shadow-xl shadow-[#5651e5] rounded-xl overflow-hidden dark:shadow-[#e8dfab]">
+        <div className="relative w-full h-auto p-4 m-auto duration-300 ease-in shadow-xl shadow-[#908eca] rounded-xl overflow-hidden dark:shadow-[#e8dfab] dark:shadow-lg ">
           <div className="absolute inset-0 bg-black opacity-25 rounded-xl"></div>
           <Image
             src="/assets/image.jpg"
