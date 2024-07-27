@@ -22,10 +22,10 @@ const Projects = () => {
             skillUsed="ReactJS"
           />
           <ProjectItem
-            title="Landing Page"
+            title="Connes Website"
             backgroundImg={Img2}
             projectURL="/project/project2"
-            skillUsed="ReactJS"
+            skillUsed="NextJS"
           />
           <ProjectItem
             title="Portfolio"
