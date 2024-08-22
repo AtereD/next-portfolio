@@ -3,6 +3,7 @@ import React from "react";
 import Img1 from "../public/assets/projects/firebase-auth.png";
 import Img2 from "../public/assets/projects/landing-page.png";
 import Img3 from "../public/assets/projects/portfolio.png";
+import Img4 from "../public/assets/projects/project4.png";
 import Link from "next/link";
 import ProjectItem from "./ProjectItem";
 
@@ -16,10 +17,10 @@ const Projects = () => {
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <ProjectItem
-            title="Firebase Auth Login"
-            backgroundImg={Img1}
-            projectURL="/project/project1"
-            skillUsed="ReactJS"
+            title="Sunny Cosmetic"
+            backgroundImg={Img4}
+            projectURL="/project/project4"
+            skillUsed="NextJS, Tailwind CSS"
           />
           <ProjectItem
             title="Connes Website"
@@ -33,11 +34,11 @@ const Projects = () => {
             projectURL="/project/project3"
             skillUsed="ReactJS"
           />
-          {/* <ProjectItem
+          <ProjectItem
                     title="Firebase Auth Login"
                     backgroundImg={Img1}
-                    projectURL="/project1"
-                /> */}
+                    projectURL="/project/project1"
+                />
         </div>
       </div>
     </div>
