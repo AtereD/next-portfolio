@@ -55,7 +55,7 @@ const Projects = () => {
         </p>
         <h2 className="py-4">What I&apos;ve Built</h2>
         
-          <div className="items-center justify-center hidden gap-4 lg:flex">
+          <div className="items-center justify-center hidden gap-4 md:flex">
         <button
               onClick={handlePrevious}
               className="px-2 py-2 rounded-full dark:text-white border-[#5651e5] dark:border-[#eece1a]"
