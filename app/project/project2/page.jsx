@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Img2 from "@/public/assets/projects/landing-page.png";
+import Img2 from "@/public/assets/projects/lingua.png";
 import { Circle, Radio } from "lucide-react";
 import Link from "next/link";
 import "@/app/globals.css";
@@ -18,7 +18,7 @@ const Manage = ({}) => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Connes</h2>
+          <h2 className="py-2">Lingua</h2>
           <h3>NextJS / Tailwind CSS</h3>
         </div>
       </div>
@@ -28,18 +28,17 @@ const Manage = ({}) => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This website was built using NextJS and styed using
-            tailwindCSS framework.
+          LinguaEd is a cutting-edge mock educational platform dedicated to revolutionizing language learning through innovative technology and personalized experiences. It offer a comprehensive suite of language courses designed to cater to learners of all levels, from beginners to advanced. With interactive lessons, immersive tools, and expert guidance, LinguaEd aims to make language acquisition engaging, effective, and accessible.
           </p>
           <a
-            href="https://github.com/AtereD/Connes"
+            href="https://github.com/AtereD/lingua-ed"
             target="_blank"
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4 mr-8 dark:border-[#eece1a] rounded-none dark:hover:bg-[#eece1a] hover:ease-in-out hover:transition-all dark:hover:border-[#1f1f1f] dark:hover:text-[#111] hover:h-[40px]  border-[#5651e5] hover:border-[#5651e5] dark:text-[#ddd]">Code</button>
           </a>
           <a
-            href="https://connes.vercel.app/"
+            href="https://lingua-ed.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -55,6 +54,12 @@ const Manage = ({}) => {
               </p>
               <p className="flex items-center py-2 text-gray-600 dark:text-gray-100">
                 <Circle className="pr-1 text-gray-800 dark:text-gray-400" size={15} /> Tailwind
+              </p>
+              <p className="flex items-center py-2 text-gray-600 dark:text-gray-100">
+                <Circle className="pr-1 text-gray-800 dark:text-gray-400" size={15} /> Shadcn
+              </p>
+              <p className="flex items-center py-2 text-gray-600 dark:text-gray-100">
+                <Circle className="pr-1 text-gray-800 dark:text-gray-400" size={15} /> Wordpress
               </p>
             </div>
           </div>
