@@ -1,8 +1,17 @@
+"use client"
 import { Github, Linkedin, Mail, UserRound, ChevronsUp } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { useForm, ValidationError } from '@formspree/react';
+import { useRouter } from "next/navigation";
 
 const Contact = () => {
+  const router = useRouter()
+  const [state, handleSubmit] = useForm("xyzykozz");
+  if (state.succeeded) {
+     router.push("/success") ;
+  }
+  
   return (
     <div className="w-full lg:h-screen" id="contact">
       <div className="container w-full py-16 mx-auto">
@@ -64,26 +73,23 @@ const Contact = () => {
           {/* right */}
           <div className="w-full h-auto col-span-3 border rounded-xl lg:p-4">
             <div className="p-4">
-              <form action="https://api.web3forms.com/submit" method="POST">
+              <form form onSubmit={handleSubmit} action="https://formspree.io/f/xyzykozz" method="POST">
                 <div className="grid w-full gap-4 py-2 md:grid-cols-2">
-                  <input
-                    type="hidden"
-                    name="access_key"
-                    value="0133f425-642d-44ea-9234-bc5ca17e0dab"
-                  />
                   <div className="flex flex-col">
-                    <label className="py-2 text-sm uppercase">Name</label>
+                    <label className="py-2 text-sm uppercase" htmlFor="name">Name</label>
                     <input
+                      id="name"
                       type="text"
                       name="name"
                       className="flex p-3 border-b dark:border-[#eece1a] rounded-lg focus:bg-transparent outline-none bg-transparent border-b-[#5651e5]"
                     />
                   </div>
                   <div className="flex flex-col">
-                    <label className="py-2 text-sm uppercase">
+                    <label htmlFor="number" className="py-2 text-sm uppercase">
                       Phone Number
                     </label>
                     <input
+                      id="number"
                       type="text"
                       name="number"
                       className="flex p-3 border-b dark:border-[#eece1a] rounded-lg focus:bg-transparent outline-none bg-transparent border-b-[#5651e5] "
@@ -91,35 +97,48 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex flex-col">
-                  <label className="py-2 text-sm uppercase">Subject</label>
+                  <label htmlFor="subject" className="py-2 text-sm uppercase">Subject</label>
                   <input
+                    id="subject"
                     type="text"
                     name="subject"
                     className="flex p-3 border-b dark:border-[#eece1a] rounded-lg focus:bg-transparent outline-none bg-transparent border-b-[#5651e5]"
                   />
                 </div>
                 <div className="flex flex-col">
-                  <label className="py-2 text-sm uppercase">
+                  <label htmlFor="email" className="py-2 text-sm uppercase">
                     Email Address
                   </label>
                   <input
+                    id="email"
                     type="text"
                     name="email"
                     className="flex p-3 border-b dark:border-[#eece1a] rounded-lg focus:bg-transparent outline-none bg-transparent border-b-[#5651e5] "
+                  />
+                  <ValidationError 
+                    prefix="Email" 
+                    field="email"
+                    errors={state.errors}
                   />
                 </div>
                 <div className="flex flex-col">
                   <label className="py-2 text-sm uppercase">Message</label>
                   <textarea
+                    id="message"
                     type="text"
                     name="message"
                     className="w-full py-10 mb-12 transition-all focus:bg-transparent dark:border-[#eece1a] outline-none resize-none focus:border-[#eece1a] border-b rounded-lg pl-3 bg-transparent border-b-[#5651e5] "
                     rows={4}
                   />
+                  <ValidationError 
+                    prefix="Message" 
+                    field="message"
+                    errors={state.errors}
+                  />
                 </div>
                 <button
                   className="w-full p-4 mt-4 h-[50px]  lg:w-1/2 bg-transparent dark:border-[#eece1a] rounded-none dark:hover:bg-[#eece1a] hover:ease-in-out hover:transition-all dark:hover:border-[#1f1f1f] hover:text-[#111] hover:h-[40px]  flex items-center justify-center border-[#5651e5] hover:border-[#5651e5] dark:text-[#ddd]"
-                  type="submit"
+                  type="submit" disabled={state.submitting}
                 >
                   Send
                 </button>
