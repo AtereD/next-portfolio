@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from "react";
-import Img1 from "../public/assets/projects/firebase-auth.png";
+import Img1 from "../public/assets/projects/hoverboard.png";
 import Img2 from "../public/assets/projects/lingua.png";
 import Img3 from "../public/assets/projects/portfolio.png";
 import Img4 from "../public/assets/projects/project4.png";
@@ -8,6 +8,12 @@ import ProjectItem from "./ProjectItem";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const projectData = [
+  {
+    title: "Hoverboard",
+    backgroundImg: Img1,
+    projectURL: "/project/project1",
+    skillUsed: "HTML, CSS, JavaScript",
+  },
   {
     title: "Lingua",
     backgroundImg: Img2,
@@ -20,18 +26,7 @@ const projectData = [
     projectURL: "/project/project4",
     skillUsed: "NextJS, Tailwind CSS",
   },
-  // {
-  //   title: "Portfolio",
-  //   backgroundImg: Img3,
-  //   projectURL: "/project/project3",
-  //   skillUsed: "ReactJS",
-  // },
-  // Uncomment this if you want to include the Firebase Auth Login project
-  // {
-  //   title: "Firebase Auth Login",
-  //   backgroundImg: Img1,
-  //   projectURL: "/project/project1",
-  // },
+  
 ];
 
 const Projects = () => {
@@ -56,25 +51,26 @@ const Projects = () => {
         <h2 className="py-4">What I&apos;ve Built</h2>
         
           <div className="items-center justify-center hidden gap-4 md:flex">
-        <button
+            <button
               onClick={handlePrevious}
               className="px-2 py-2 rounded-full dark:text-white border-[#5651e5] dark:border-[#eece1a]"
             >
               <ChevronLeft/>
             </button>
-          <ProjectItem
+            <ProjectItem
             title={projectData[currentIndex].title}
             backgroundImg={projectData[currentIndex].backgroundImg}
             projectURL={projectData[currentIndex].projectURL}
             skillUsed={projectData[currentIndex].skillUsed}
-          />
-          <button
+            />
+            <button
               onClick={handleNext}
               className="px-2 py-2 rounded-full dark:text-white border-[#5651e5] dark:border-[#eece1a]"
             >
               <ChevronRight/>
             </button>
-            </div>
+          </div>
+            
             <div className="flex flex-col gap-4 md:hidden">
             <ProjectItem
             title={projectData[currentIndex].title}

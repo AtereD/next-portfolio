@@ -12,7 +12,7 @@ const About = () => {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600 dark:text-slate-200">
-            I am Atere Damilola and I specialize in developing mobile-responsive
+             I specialize in developing mobile-responsive
             front-end user interface (UI) applications that seamlessly integrate
             with APIs and various backend technologies. My expertise lies in
             crafting front-end applications using HTML, CSS, JavaScript, and

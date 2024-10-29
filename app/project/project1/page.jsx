@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import Img1 from "@/public/assets/projects/firebase-auth.png";
+import Img1 from "@/public/assets/projects/hoverboard.png";
 import { Circle, Radio } from "lucide-react";
 import Link from "next/link";
 import "@/app/globals.css";
 
-const Firebase = ({}) => {
+const Hoverboard = ({}) => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -18,8 +18,8 @@ const Firebase = ({}) => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Firebase Auth Login</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h2 className="py-2">Hoverboard</h2>
+          <h3>HTML, CSS, JavaScript</h3>
         </div>
       </div>
 
@@ -28,18 +28,17 @@ const Firebase = ({}) => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This app was built using React JS and was integrated with Firebase
-            backend authentication.
+          This project creates an interactive grid of colorful squares that change dynamically when hovered over. Built using HTML, CSS, and JavaScript, the hoverboard relies on event listeners to detect when a user hovers over a square, triggering a color change effect.
           </p>
           <a
-            href="https://github.com/AtereD/firebase_auth"
+            href="https://github.com/AtereD/Hoverboard"
             target="_blank"
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4 mr-8 dark:border-[#eece1a] rounded-none dark:hover:bg-[#eece1a] hover:ease-in-out hover:transition-all dark:hover:border-[#1f1f1f] dark:hover:text-[#111] hover:h-[40px] border-[#5651e5] hover:border-[#5651e5] dark:text-[#ddd]">Code</button>
           </a>
           <a
-            href="https://jazzy-pithivier-71a03c.netlify.app/"
+            href="https://atered.github.io/Hoverboard/"
             target="_blank"
             rel="noreferrer"
           >
@@ -51,16 +50,13 @@ const Firebase = ({}) => {
             <p className="pb-2 font-bold text-center">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="flex items-center py-2 text-gray-600 dark:text-gray-100 ">
-                <Circle className="pr-1 text-gray-800 dark:text-gray-400" size={15} /> React
+                <Circle className="pr-1 text-gray-800 dark:text-gray-400" size={15} /> HTML
               </p>
               <p className="flex items-center py-2 text-gray-600 dark:text-gray-100">
-                <Circle className="pr-1 text-gray-800 dark:text-gray-400" size={15} /> Tailwind
+                <Circle className="pr-1 text-gray-800 dark:text-gray-400" size={15} /> CSS
               </p>
               <p className="flex items-center py-2 text-gray-600 dark:text-gray-100 ">
                 <Circle className="pr-1 text-gray-800 dark:text-gray-400" size={15} /> Javascript
-              </p>
-              <p className="flex items-center py-2 text-gray-600 dark:text-gray-100 ">
-                <Circle className="pr-1 text-gray-800 dark:text-gray-400" size={15} /> Firebase
               </p>
             </div>
           </div>
@@ -73,4 +69,4 @@ const Firebase = ({}) => {
   );
 };
 
-export default Firebase;
+export default Hoverboard;
